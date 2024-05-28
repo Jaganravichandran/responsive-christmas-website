@@ -1,0 +1,438 @@
+/* Poppins: CSS classes */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* css reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* root */
+:root {
+  /* colors light */
+
+  --light-first: rgba(220, 56, 69, 1);
+  --light-first-alt: rgba(212, 43, 57, 1);
+  --light-title: rgba(40, 37, 37, 1);
+  --light-text: rgba(93, 86, 86, 1);
+  --light-text-light: rgba(145, 136, 137, 1);
+
+  /* colors dark */
+
+  --dark-first: rgba(219, 77, 89, 1);
+  --dark-title: rgba(243, 242, 242, 1);
+  --dark-text: rgba(194, 189, 189, 1);
+  --dark-body: rgba(37, 24, 25, 1);
+  --dark-container: rgba(47, 34, 35, 1);
+
+  /* mobile font size */
+  --mfs-h1: 1.5rem;
+  --mfs-h2: 1.25rem;
+  --mfs-h3: 1rem;
+  --mfs-h4: 15px;
+  --mfs-sfs: 13px;
+  --mfs-smallerfs: 12px;
+
+  /* desktop font size */
+
+  --dfs-h1: 2.25rem;
+  --dfs-h2: 1.5rem;
+  --dfs-h3: 1.25rem;
+  --dfs-h4: 16px;
+  --dfs-sfs: 14px;
+  --dfs-smallerfs: 13px;
+}
+
+/* nav style */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  max-width: 70%;
+  margin: auto;
+  color: var(--light-title);
+  height: 72px;
+}
+
+.navLeft {
+  display: flex;
+  gap: 0.2rem;
+}
+.navRight {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  align-items: center;
+}
+
+.navRight a {
+  text-decoration: none;
+  color: var(--light-title);
+}
+.navRight a:hover {
+  color: var(--light-first);
+}
+/* 
+.navRight li:nth-child(1) a {
+  color: var(--light-first);
+} */
+
+/* hero style */
+
+.heroSection {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+  height: 562px;
+}
+
+.hero-right h1 {
+  font-size: var(--dfs-h1);
+}
+.hero-right p {
+  font-size: var(--dfs-sfs);
+  color: var(--light-text-light);
+  margin: 1rem 0 2rem;
+}
+
+.hero-right button {
+  background-color: var(--light-first);
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  border: none;
+  color: white;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+}
+
+/* Giving style */
+
+.giving {
+  max-width: 80%;
+  margin: auto;
+}
+
+.givingTitle {
+  text-align: center;
+  margin: 2rem 0 2.5rem;
+}
+.givingTitle h2 {
+  font-size: var(--dfs-h2);
+}
+
+.givingWrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.givingItems {
+  height: 208px;
+  width: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.givingItems h3 {
+  font-size: var(--dfs-h3);
+}
+.givingItems p {
+  font-size: var(--dfs-sfs);
+  text-align: center;
+  color: var(--light-text-light);
+}
+
+/* celebrate style */
+
+.celebrateSection {
+  display: flex;
+  max-width: 65%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+  height: 554px;
+}
+
+.celebrate-left h2 {
+  font-size: var(--dfs-h2);
+}
+.celebrate-left P {
+  font-size: var(--dfs-sfs);
+  color: var(--light-text-light);
+  margin: 1rem 0 2rem;
+}
+
+.celebrate-left button {
+  background-color: var(--light-first);
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+
+.celebrate-right {
+  width: 450px;
+  height: 450px;
+}
+
+.gifts {
+  max-width: 50%;
+  margin: auto;
+}
+
+.giftTitle {
+  text-align: center;
+  margin: 2rem 0 2.5rem;
+}
+
+.giftTitle h2 {
+  font-size: var(--dfs-h2);
+}
+.giftWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 3.5rem;
+}
+
+.giftItems {
+  width: 200px;
+  height: 247px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.giftItems h3 {
+  font-size: var(--dfs-h3);
+  text-align: start;
+}
+.giftItems p {
+  font-size: var(--dfs-sfs);
+  color: var(--light-text-light);
+  text-align: start;
+}
+
+.giftItems .heart {
+  position: absolute;
+  top: 0;
+
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+}
